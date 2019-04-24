@@ -6,11 +6,6 @@ void swap( int& a, int& b) {
 	a = b;
 	b = t;
 }  
-/*void printv(vector<int>& vA) {
-        for(int i=0; i<vA.size(); i++) 
-                cout << vA[i] << " ";
-        cout << endl;
-}*/
 void getNewDeck(vector<int>& cards) {
 	for(int i=0; i<52; i++ ) {
 		cards.push_back(i%13 + 1);
