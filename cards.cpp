@@ -16,7 +16,7 @@ void getNewDeck(vector<int>& cards) {
 void shuffle(vector<int>& cards) {
 	srand(time(NULL));
 	int arr[13] ={0};
-	for(int i=0; i<cards.size();i++){
+	for(int i=0; i<cards.size();i++) {
 		int ai = rand() % (cards.size() - i);
 		arr[cards[ai]-1]++;
 		//cout << ai << ", " << cards[ai] << " --> " << endl;	
